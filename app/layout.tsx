@@ -2,12 +2,17 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Pastebin-Lite | Share Code & Text Snippets',
-  description: 'A modern pastebin service with expiry and view-limit constraints. Share code, text, and snippets with customizable lifetime.',
-  keywords: ['pastebin', 'code sharing', 'snippet', 'paste', 'text sharing'],
-  authors: [{ name: 'Pastebin-Lite' }],
+  title: 'PasteBin | Share Code & Text Elegantly',
+  description: 'A modern, elegant pastebin service with expiry and view-limit constraints. Share code, text, and snippets with style and security.',
+  keywords: ['pastebin', 'code sharing', 'snippet', 'paste', 'text sharing', 'elegant'],
+  authors: [{ name: 'PasteBin' }],
   viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#0a0e14',
+  themeColor: '#0f0f1e',
+  openGraph: {
+    title: 'PasteBin | Share Code & Text Elegantly',
+    description: 'Share your code and text snippets with style and security',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
@@ -17,10 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen relative overflow-x-hidden">
-        {/* Scan line effect overlay */}
-        <div className="scan-lines fixed inset-0 pointer-events-none z-50" />
-        
+      <body className="min-h-screen relative">
         {children}
       </body>
     </html>
