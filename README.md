@@ -1,45 +1,54 @@
-# 🚀 Pastebin-Lite
+# Pastebin-Lite
 
-A modern, feature-rich pastebin service built with Next.js 15 and Vercel Postgres. Share code and text snippets with optional expiry constraints and view limits.
+A modern, feature-rich **pastebin service** built with **Next.js 15**, **React 19**, **TypeScript**, and **Vercel Postgres**.  
+Share text and code snippets with optional expiry constraints and view limits. 
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Next.js](https://img.shields.io/badge/Next.js-15-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)
+---
 
-## ✨ Features
+## 🚀 Features
 
-- 📝 **Create & Share** - Paste text/code and get a shareable URL
-- ⏱️ **Time-based Expiry** - Set TTL (time-to-live) in seconds
-- 👁️ **View Limits** - Control how many times a paste can be viewed
-- 🎨 **Modern UI** - Cyberpunk/terminal-inspired design with smooth animations
-- 🔒 **XSS Protection** - Safe HTML rendering
-- ⚡ **Fast & Scalable** - Serverless architecture on Vercel
-- 🧪 **Test Mode Support** - Deterministic time for automated testing
-- 📱 **Fully Responsive** - Works perfectly on all devices
+✔ Create & share text/code snippets with a unique URL  
+✔ ⏱️ Time-based expiry — set TTL (time-to-live) in seconds  
+✔ 👁️ View limits — restrict how many times a paste can be viewed  
+✔ 💻 Modern, responsive UI with a terminal/cyberpunk design  
+✔ 🛡️ XSS protection and server-side validation  
+✔ ⚡ Fast and scalable using serverless functions on Vercel  
+✔ 📱 Works on all screen sizes  
+✔ 🧪 Test mode support for deterministic testing 
 
-## 🏗️ Tech Stack
+---
 
-- **Frontend**: Next.js 15 (App Router), React 19, TypeScript
-- **Styling**: Tailwind CSS with custom terminal theme
-- **Database**: Vercel Postgres (PostgreSQL)
-- **Deployment**: Vercel
-- **Validation**: Zod
-- **ID Generation**: nanoid
+## 💡 Tech Stack
 
-## 📋 Prerequisites
+| Layer | Technology |
+|-------|------------|
+| Frontend | Next.js 15 (App Router), React 19 |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Database | Vercel Postgres (PostgreSQL) |
+| Validation | Zod |
+| ID Generation | nanoid |
+| Deployment | Vercel | 
 
-- Node.js 18+ 
-- npm or yarn
-- Vercel account (for deployment)
+---
 
-## 🚀 Running Locally
+## 🔧 Prerequisites
 
-### 1. Clone the Repository
+Before you begin, ensure you have:
 
-```bash
-git clone <your-repo-url>
-cd pastebin-lite
-```
+- Node.js (v18 or later)  
+- npm or yarn  
+- A Vercel account with a Postgres database setup (for production) 
+
+---
+
+## 🛠️ Getting Started (Local)
+
+1. **Clone the repo**
+   bash
+   git clone https://github.com/anurags91/pastebin-lite.git
+   cd pastebin-lite
+
 
 ### 2. Install Dependencies
 
